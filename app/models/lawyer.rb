@@ -3,5 +3,6 @@ class Lawyer < ApplicationRecord
   has_many :case_lawyers
   has_many :cases, through: :case_lawyers
   has_many :clients, through: :cases
+  has_many :tasks, through: :cases
 
 end

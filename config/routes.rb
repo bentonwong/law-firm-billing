@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :case_tasks
+  resources :tasks
   resources :case_lawyers
   resources :cases
   resources :law_firms
